@@ -1,4 +1,6 @@
-function createMachine (stateMachineDefinition) {
+import { StateMachineDefinition } from './types'
+
+function createMachine (stateMachineDefinition: StateMachineDefinition) {
   const machine = {
     value: stateMachineDefinition.initialState,
     transition (currentState, event) {
